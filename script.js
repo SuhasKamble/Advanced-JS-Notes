@@ -41,6 +41,7 @@ const addNewNote=(text)=>{
     // delete the note on clicking on delBtn
     delBtn.addEventListener('click',()=>{
         note.remove()
+        updateLSData()
     })
 
     // toggle the class 'hidden' on the click on the editBtn
