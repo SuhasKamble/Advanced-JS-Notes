@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+header{
+    height: 10vh;
+    background: #FBBC04;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+header{
+    color: white;
+}
+
+.btn-container{
+    position: fixed;
+    top: 15%;
+    right: 2%;
+}
+
+.btn{
+    padding:10px 20px;
+    background-color:#FBBC04 ;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    font-size: 17px;
+    border-radius: 40px;
+}
+
+
+.btn:hover{
+    box-shadow: 1px 1px 5px rgba(0 ,0,0, 0.75);
+}
+
+
+.notes-container{
+    margin-top: 1rem;
+    padding: 2rem;
+    width: 100%;
+    min-height:80vh;
+    /* background: lightblue; */
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.notes{
+    /* border: 1px solid black; */
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    padding: 20px;
+   overflow: auto;
+   border-radius: 10px;
+   height: 300px;
+   width: 350px;
+   box-shadow: 2px 3px 7px 3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px 3px 7px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 3px 7px 3px rgba(0,0,0,0.75);
+}
+
+.main{
+    margin-top: 10px;
+    /* display: none; */
+}
+
+textarea{
+    /* display: none; */
+    width: 100%;
+    height: 200px;
+    outline: none;
+    font-size: 16px;
+    border: none;
+}
+
+.operations{
+    /* background-color: lightblue; */
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+
+.edit-btn,.trash-btn{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.edit-btn{
+    background-color: greenyellow;
+}
+.trash-btn{
+    background-color: tomato;
+}
+
+.edit-btn .fas, .trash-btn .fas{
+    font-size: 16px;
+}
+
+.edit-btn:hover{
+    background-color: white;
+    color: greenyellow;
+    box-shadow: 1px 1px 6px rgba(0 ,0,0, 0.75);
+}
+
+.trash-btn:hover{
+    background-color: white;
+    color: tomato;
+    box-shadow: 1px 1px 6px rgba(0 ,0,0, 0.75);
+
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+@media(max-width:780px){
+
+    header h1{
+        font-size: 1.5rem;
+    }
+
+    .notes-container{
+        padding: 10px;
+        justify-content: center;
+        margin-top: 6rem;
+    }
+    .notes{
+        /* width: 80%; */
+        
+    }
+    
+}
